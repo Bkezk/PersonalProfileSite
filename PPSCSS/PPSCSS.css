@@ -1,0 +1,12 @@
+html {box-sizing: border-box;}
+
+body {margin-left: 15%; margin-right: 15%;}
+
+
+/* Header */
+header {display: flex; justify-content: space-between; margin-top: 10px; border: 2px solid blue; align-items: center;}
+nav {display: flex; justify-content: space-between;}
+nav li {display: inline-block; text-decoration: none; margin-right: 20px; color: black}
+
+
+main h2 {margin-left: 1%;}
