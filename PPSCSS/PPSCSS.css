@@ -1,12 +1,23 @@
-html {box-sizing: border-box;}
+html {box-sizing: border-box; font-family:Georgia, 'Times New Roman', Times, serif;}
 
-body {margin-left: 15%; margin-right: 15%;}
-
+body {margin-left: 20%; margin-right: 20%;}
+p {font-size:large;}
+section li {font-size: large;}
 
 /* Header */
-header {display: flex; justify-content: space-between; margin-top: 10px; border: 2px solid blue; align-items: center;}
+header {display: flex; justify-content: space-between; margin-top: 10px; align-items: center;}
 nav {display: flex; justify-content: space-between;}
-nav li {display: inline-block; text-decoration: none; margin-right: 20px; color: black}
+nav li {display: inline-block; text-decoration: none; margin-right: 20px; color: black; font-size: large;}
 
 
-main h2 {margin-left: 1%;}
+main h2 {margin-top: 16px; margin-bottom: 0px;}
+#aboutmediv {display: inline-flex; justify-content: space-between; align-items: center;}
+#aboutmedivp {display: flex; flex-flow: column wrap; margin-right: 1%;}
+#aboutmedivp p {margin-top: 12px; margin-bottom: 12px;}
+#aboutmediv img {height: 325px; width:auto; border: 2px solid white; border-radius: 5%;}
+
+
+#skills li {display: inline; }
+#skills ul {display: flex; justify-content: space-around; align-items: center;}
+
+#contact ul {list-style-type: none;}
