@@ -15,7 +15,7 @@
                     <a href="#aboutmediv"><li>About me</li></a>
                     <a href="#projects"><li>Projects</li></a>
                     <a href="#skills"><li>Skills</li></a>
-                    <a href="#contact"><li>Contact</li></a>
+                    <a href="./contactPPS.html"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>
@@ -45,36 +45,22 @@
                 <li>HTML & CSS</li>
             </ul>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li>Email: Bradenkeck@yahoo.com</li>
-                <li>Call or Text: 606-524-8595</li>
-            </ul>
-            <div id="linksp">
-                <div id="links">
-                    <a href="https://www.linkedin.com/" target="_blank"><img id="LI" src="./PPSimages/Linkedin Logo.png" alt="Linkedin"></a>
-                    <a href="https://github.com/" target="_blank"><img id="GH" src="./PPSimages/github logo.png" alt="GitHub"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img id="I" src="./PPSimages/Insta.png" alt="Instagram"></a>
-                </div>
-            </div>
-        </section>
         <footer>
             <p>Click to randomize the font!</p>
             <p id="RB"><strong>Randomize</strong></p>
         </footer>
-        <script type="text/javascript">
-
+       <script>
             const fontFamilyList = ['Tahoma', 'sans-serif', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', 
-            'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'Times New Roman', 'Times', 'serif'];
-
+        'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'Times New Roman', 'Times', 'serif'];
+        
+        
             let htmlFont = document.getElementById('H');
-
-            const random = () => {let rand = fontFamilyList[Math.floor(Math.random() * fontFamilyList.length)]
+            const random = () => {
+                let rand = fontFamilyList[Math.floor(Math.random() * fontFamilyList.length)]
                 htmlFont.style.fontFamily = rand;}
-            
+        
             let randomButton = document.getElementById('RB');
-            
+        
             randomButton.onclick = random;
         </script>
     </body>

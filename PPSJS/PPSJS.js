@@ -1,13 +1,5 @@
 
 
-/*let myName = document.getElementById('bk');
-
-let nameChange = () => {
-    myName.innerHTML = "booty";
-}
-
-myName.addEventListener('click', nameChange);*/
-
 const fontFamilyList = ['Tahoma', 'sans-serif', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', 
 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'Times New Roman', 'Times', 'serif'];
 
