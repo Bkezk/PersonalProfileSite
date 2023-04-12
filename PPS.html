@@ -6,7 +6,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-        <script src="./PPSJS.js"></script>
     </head>
     <body>
         <header>
@@ -64,6 +63,19 @@
             <p>Click to randomize the font!</p>
             <p id="RB"><strong>Randomize</strong></p>
         </footer>
-        
+        <script type="text/javascript">
+
+            const fontFamilyList = ['Tahoma', 'sans-serif', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', 
+            'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'Times New Roman', 'Times', 'serif'];
+
+            let htmlFont = document.getElementById('H');
+
+            const random = () => {let rand = fontFamilyList[Math.floor(Math.random() * fontFamilyList.length)]
+                htmlFont.style.fontFamily = rand;}
+            
+            let randomButton = document.getElementById('RB');
+            
+            randomButton.onclick = random;
+        </script>
     </body>
 </html>
