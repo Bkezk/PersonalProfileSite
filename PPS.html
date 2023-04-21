@@ -7,18 +7,35 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
-            <h1 id="bk">Braden Keck</h1>
-            <nav>
-                <ul id="navitems">
-                    <a href="#aboutmediv"><li>About me</li></a>
-                    <a href="#projects"><li>Projects</li></a>
-                    <a href="#skills"><li>Skills</li></a>
-                    <a href="./contactPPS.html"><li>Contact</li></a>
-                </ul>
-            </nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <a href="#">About Me</a>
+                  <a href="./contactPPS.html">Contact</a>
+                </div>
+              
+            </div>
+            <div id="mobilenav">
+            <h2>Braden Keck</h2>
+            <img src="./PPSimages/threelines.png" alt="" onclick="openNav()">
+            </div>
+            <div id="compnav">
+                <h1 id="bk">Braden Keck</h1>
+                <nav>
+                    <ul id="navitems">
+                        <a href="#aboutmediv"><li>About me</li></a>
+                        <a href="#projects"><li>Projects</li></a>
+                        <a href="#skills"><li>Skills</li></a>
+                        <a href="./contactPPS.html"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <h2>About Me</h2>
@@ -63,6 +80,17 @@
             let randomButton = document.getElementById('RB');
         
             randomButton.onclick = random;
+        </script>
+        <script>
+            /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            }
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
         </script>
     </body>
 </html>
